@@ -76,7 +76,7 @@ module.exports.resendOtp = async (req, res) => {
             number: req.body.number
         })
 
-        const OTP = otpGen.generate(6, {
+        const OTP = otpGen.generate(4, {
             digits: true, alphabets: false, lowerCaseAlphabets: false, upperCaseAlphabets: false, specialChars: false
         });
         console.log(OTP);
